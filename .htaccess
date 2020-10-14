@@ -1,0 +1,9 @@
+DirectoryIndex index.php index.html index.htm index2.html
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ Index.php [QSA]
+RewriteRule ^admin$  views/admin.php [NC,QSD]
+

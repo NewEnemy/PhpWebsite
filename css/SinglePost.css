@@ -1,0 +1,108 @@
+.singlePostWraper{
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+   
+}
+.imageWraper{
+    position: relative;
+    cursor: zoom-in;
+    
+}
+.singlePostWraper img{
+    height: 80vh;
+}
+.controls{
+   display: flex;
+    position: absolute;
+
+   bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+   bottom: 8px;
+  width:100%;
+ justify-content: space-around;
+align-items: center;
+border-top: 2px solid transparent;
+cursor: auto;
+transition: border 1s;
+
+
+}
+.controls:hover{
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+.controls div{
+    color: rgba(255, 255, 255, 0.0);
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    animation: showUp 1s;
+    animation-direction: reverse;
+ 
+    
+
+}
+.buttonsControls{
+    text-align: center;
+   background-color: rgba(0, 0, 0, 0)!important;
+    width: 30%;
+}
+
+.controls div{
+   transition: all 1s;
+
+}
+.controls:hover div{
+    color: rgba(255, 255, 255, 1);
+   background-color: rgba(0, 0, 0, 0.4);
+
+    transition: all 1s;
+
+
+}
+#title{
+    position: absolute;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+@keyframes showUp{
+    from{color:rgba(255, 255, 255, 0.0)}
+    to{color:rgba(255, 255, 255, 1)}
+}
+
+.modial{
+    overflow: scroll;
+    content: "";
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: auto;
+    height: auto;
+    
+    position: fixed;
+    top:0;
+    z-index: 999;
+    cursor: zoom-out;
+}
+.modialClose{
+   float: right;
+   padding: 40px;
+   font-size: 2rem;
+}
+.modialImageWraper{
+  
+  
+}
+#modialImage{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.visible{
+    display: initial;
+}

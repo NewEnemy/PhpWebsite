@@ -1,0 +1,53 @@
+.adminPanelBody{
+    position: relative;
+    display: flex;
+}
+.adminAllPosts{
+    float: left;
+    margin: 20px;
+    border: 1px solid white;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.adminItemWreaper{
+border-bottom: 1px solid white;
+padding: 40px;  
+width: 100%;  
+}
+.adminItemWreaper img{
+    width: 100px;
+    border: 1px solid white;
+}
+.adminButtonWraper button{
+   padding:10px;
+   margin: 5px;
+    color: black;
+    cursor:pointer;
+}
+.adminButtonWraper button:hover{
+    border-bottom:1px solid white;
+}
+.uploadFormWraper{
+    align-self: flex-start;
+    margin-left: 10vw;
+    padding: 30px;
+}
+.uploadFormWraper input{
+    margin: 10px;
+}
+#uploadComment{
+    width: 200px;
+    height: 200px;
+}
+#uploadTags{
+    width: 400px;
+    height: 50px;
+}
+label{
+}
+form{
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+}
